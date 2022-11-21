@@ -24,9 +24,9 @@
             <input id="loadSongs" type="submit" value="Load Songs" name='Submit' class="btn btn-success">   
         </form>
 
-        <div id="content" class="row"></div> 
+         
     </div>
-
+    <div id="content" class="row"></div>
     <script>
         let btnLoadSongs = document.querySelector("#loadSongs");
         btnLoadSongs.addEventListener('click', loadXML);
@@ -44,14 +44,12 @@
         }
         function convertXml(xml) {
             // console.log(typeof xml) - object
-            //console.log(xml)
-            let albums = xml.querySelectorAll('albums')[0];
-            // console.log(songsmain)
-            let songs = albums.querySelector("song");
-
+            console.log(xml)
+            let songsmain = xml.querySelectorAll('songs')[0];
+            let songs = songsmain.getElementsByTagName("song");
             let content = document.querySelector('#content');
 
-            for (let i = 0; i < albums.length; i++) {
+            for (let i = 0; i < songs.length; i++) {
                 content.innerHTML += `
                 <div class="col text-center">
                     <div class="card" style="width: 18rem; height: 400px">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><!-- 20 songs: title, artist, country, genre, year -->
 
-<albums>
+<songs>
     <song>
         <title id="1">Dont Stay</title>
         <artist>Linkin Park</artist>
@@ -149,4 +149,4 @@
         <genre>Hip-Hop/Rap</genre>
         <year>2020</year> 
     </song>
-</albums>
+</songs>
