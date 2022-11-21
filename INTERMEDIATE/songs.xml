@@ -1,108 +1,152 @@
-<!-- 20 songs: title, artist, country, genre, year -->
-<?xml-model href="file.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"
+<?xml version="1.0" encoding="UTF-8"?><!-- 20 songs: title, artist, country, genre, year -->
 
-<songs>
-    <title id="1">Dont Stay</title>
-    <artist>Linkin Park</artist>
-    <country>USA</country>
-    <genre>Nu Metal</genre>
-    <year>2003</year>
-    <title id="2">Lying From You</title>
-    <artist>Linkin Park</artist>
-    <country>USA</country>
-    <genre>Nu Metal</genre>
-    <year>2003</year>
-    <title id="3">Figure</title>
-    <artist>Linkin Park</artist>
-    <country>USA</country>
-    <genre>Nu Metal</genre>
-    <year>2003</year>
-    <title id="4">With You</title>
-    <artist>Linkin Park</artist>
-    <country>USA</country>
-    <genre>Nu Metal</genre>
-    <year>2000</year>
-    <title id="5">Crawling</title>
-    <artist>Linkin Park</artist>
-    <country>USA</country>
-    <genre>Nu Metal</genre>
-    <year>2000</year>
-    <title id="6">By Myself</title>
-    <artist>Linkin Park</artist>
-    <country>USA</country>
-    <genre>Nu Metal</genre>
-    <year>2000</year>
-    <title id="7">In The End</title>
-    <artist>Linkin Park</artist>
-    <country>USA</country>
-    <genre>Nu Metal</genre>
-    <year>2000</year>
-    <title id="8">Feel It 2</title>
-    <artist>Twocolors</artist>
-    <country>Germany</country>
-    <genre>Dance/Electronic</genre>
-    <year>2021</year>
-    <title id="9">Pepas</title>
-    <artist>Farruko</artist>
-    <country>Puerto Rico</country>
-    <genre>Latin Urbano</genre>
-    <year>2021</year>
-    <title id="10">Solo Para Ti</title>
-    <artist>Alvaro Soler feat. Topic</artist>
-    <country>Spain</country>
-    <genre>Pop</genre>
-    <year>2022</year>
-    <title id="11">Aicha</title>
-    <artist>Outlandish</artist>
-    <country>I do the research when theres time</country>
-    <genre>R&B/Soul, Latin Urbano, Pop, Arabic Hip Hop</genre>
-    <year>2002</year>
-    <title id="12">Happy Birthday</title>
-    <artist>Flypside</artist>
-    <country>I do the research when theres time</country>
-    <genre>Hip-Hop/Rap</genre>
-    <year>2005</year>
-    <title id="13">All About Us</title>
-    <artist>T.A.T.u.</artist>
-    <country>I do the research when theres time</country>
-    <genre>Pop</genre>
-    <year>2005</year>
-    <title id="14">Like a Prayer</title>
-    <artist>Madonna</artist>
-    <country>I do the research when theres time</country>
-    <genre>Pop</genre>
-    <year>1989</year>
-    <title id="15">American Pie</title>
-    <artist>Madonna</artist>
-    <country>I do the research when theres time</country>
-    <genre>Pop</genre>
-    <year>2000</year>
-    <title id="16">American Oxygen</title>
-    <artist>Rihanna</artist>
-    <country>I do the research when theres time</country>
-    <genre>Pop</genre>
-    <year>2015</year>
-    <title id="17">Black Or White</title>
-    <artist>Michael Jackson</artist>
-    <country>I do the research when theres time</country>
-    <genre>R&B/Soul, Elektronische Tanzmusik, Funk, Pop</genre>
-    <year>1991</year>
-    <title id="18">A Place for My Head</title>
-    <artist>Linkin Park</artist>
-    <country>I do the research when theres time</country>
-    <genre>Nu Metal</genre>
-    <year>2000</year>
-    <title id="19">Hurt</title>
-    <artist>Christina Aguilera</artist>
-    <country>I do the research when theres time</country>
-    <genre>R&B/Soul, Pop, UK R&B</genre>
-    <year>2006</year>
-    <title id="20">Supernova</title>
-    <artist>badmomzjay</artist>
-    <country>I do the research when theres time</country>
-    <genre>Hip-Hop/Rap</genre>
-    <year>2020</year>
-</songs>
-
-
-?>
+<albums>
+    <song>
+        <title id="1">Dont Stay</title>
+        <artist>Linkin Park</artist>
+        <country>USA</country>
+        <genre>Nu Metal</genre>
+        <year>2003</year>
+    </song>
+    
+    <song>
+        <title id="2">Lying From You</title>
+        <artist>Linkin Park</artist>
+        <country>USA</country>
+        <genre>Nu Metal</genre>
+        <year>2003</year>
+    </song>
+    <song>
+        <title id="3">Figure</title>
+        <artist>Linkin Park</artist>
+        <country>USA</country>
+        <genre>Nu Metal</genre>
+        <year>2003</year>
+    </song>    
+    <song>
+        <title id="4">With You</title>
+        <artist>Linkin Park</artist>
+        <country>USA</country>
+        <genre>Nu Metal</genre>
+        <year>2000</year>
+    </song>
+    <song>
+        <title id="5">Crawling</title>
+        <artist>Linkin Park</artist>
+        <country>USA</country>
+        <genre>Nu Metal</genre>
+        <year>2000</year> 
+    </song>
+    <song>
+        <title id="6">By Myself</title>
+        <artist>Linkin Park</artist>
+        <country>USA</country>
+        <genre>Nu Metal</genre>
+        <year>2000</year>
+    </song>
+    <song>
+        <title id="7">In The End</title>
+        <artist>Linkin Park</artist>
+        <country>USA</country>
+        <genre>Nu Metal</genre>
+        <year>2000</year>
+    </song>
+    <song>
+        <title id="8">Feel It 2</title>
+        <artist>Twocolors</artist>
+        <country>Germany</country>
+        <genre>Dance/Electronic</genre>
+        <year>2021</year>
+    </song>
+    <song>
+        <title id="9">Pepas</title>
+        <artist>Farruko</artist>
+        <country>Puerto Rico</country>
+        <genre>Latin Urbano</genre>
+        <year>2021</year>
+    </song>
+    <song>
+        <title id="10">Solo Para Ti</title>
+        <artist>Alvaro Soler feat. Topic</artist>
+        <country>Spain</country>
+        <genre>Pop</genre>
+        <year>2022</year>  
+    </song>
+    <song>
+        <title id="11">Aicha</title>
+        <artist>Outlandish</artist>
+        <country>I do the research when theres time</country>
+        <genre>RandB/Soul, Latin Urbano, Pop, Arabic Hip Hop</genre>
+        <year>2002</year>
+    </song>
+    <song>
+        <title id="12">Happy Birthday</title>
+        <artist>Flypside</artist>
+        <country>I do the research when theres time</country>
+        <genre>Hip-Hop/Rap</genre>
+        <year>2005</year>   
+    </song>
+    <song>
+        <title id="13">All About Us</title>
+        <artist>T.A.T.u.</artist>
+        <country>I do the research when theres time</country>
+        <genre>Pop</genre>
+        <year>2005</year>  
+    </song>
+    <song>
+        <title id="14">Like a Prayer</title>
+        <artist>Madonna</artist>
+        <country>I do the research when theres time</country>
+        <genre>Pop</genre>
+        <year>1989</year>   
+    </song>
+    <song>
+        <title id="15">American Pie</title>
+        <artist>Madonna</artist>
+        <country>I do the research when theres time</country>
+        <genre>Pop</genre>
+        <year>2000</year>  
+    </song>
+    <song>
+        <title id="16">American Oxygen</title>
+        <artist>Rihanna</artist>
+        <country>I do the research when theres time</country>
+        <genre>Pop</genre>
+        <year>2015</year>
+    </song>
+    <song>
+        <title id="17">Black Or White</title>
+        <artist>Michael Jackson</artist>
+        <country>I do the research when theres time</country>
+        <genre>RandB/Soul, Elektronische Tanzmusik, Funk, Pop</genre>
+        <year>1991</year> 
+    </song>
+    <song>
+        <title id="18">A Place for My Head</title>
+        <artist>Linkin Park</artist>
+        <country>I do the research when theres time</country>
+        <genre>Nu Metal</genre>
+        <year>2000</year>   
+    </song>
+    <song>
+        <title id="18">A Place for My Head</title>
+        <artist>Linkin Park</artist>
+        <country>I do the research when theres time</country>
+        <genre>Nu Metal</genre>
+        <year>2000</year>    
+    </song>
+    <song>
+        <title id="19">Hurt</title>
+        <artist>Christina Aguilera</artist>
+        <country>I do the research when theres time</country>
+        <genre>RandB/Soul, Pop, UK RsndB</genre>
+        <year>2006</year>
+    </song>
+    <song>
+        <title id="20">Supernova</title>
+        <artist>badmomzjay</artist>
+        <country>I do the research when theres time</country>
+        <genre>Hip-Hop/Rap</genre>
+        <year>2020</year> 
+    </song>
+</albums>

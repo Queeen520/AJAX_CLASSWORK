@@ -21,11 +21,50 @@
     <hr>
     <div class="container" style="margin-left: 45%;">
         <form action="">
-            <input id="loadFile" type="submit" value="Load file" name='Submit' class="btn btn-success">   
+            <input id="loadSongs" type="submit" value="Load Songs" name='Submit' class="btn btn-success">   
         </form>
 
         <div id="content" class="row"></div> 
     </div>
+
+    <script>
+        let btnLoadSongs = document.querySelector("#loadSongs");
+        btnLoadSongs.addEventListener('click', loadXML);
+        
+        function loadXML(e) {
+            e.preventDefault();      
+            let ajReq = new XMLHttpRequest();
+            ajReq.open("POST", "songs.xml");
+            ajReq.onload = function () {
+                if (this.status == 200) {
+                    convertXml(this.responseXML); 
+                }
+            }
+            ajReq.send();
+        }
+        function convertXml(xml) {
+            // console.log(typeof xml) - object
+            //console.log(xml)
+            let albums = xml.querySelectorAll('albums')[0];
+            // console.log(songsmain)
+            let songs = albums.querySelector("song");
+
+            let content = document.querySelector('#content');
+
+            for (let i = 0; i < albums.length; i++) {
+                content.innerHTML += `
+                <div class="col text-center">
+                    <div class="card" style="width: 18rem; height: 400px">
+                        <div class="card-body">
+                        <h5 class="card-title">${songs[i].getElementsByTagName('title')[0].childNodes[0].nodeValue}</h5>
+                        <p class="card-text">${songs[i].getElementsByTagName('artist')[0].childNodes[0].nodeValue}</p>
+                        <p class="card-text">${songs[i].getElementsByTagName('genre')[0].childNodes[0].nodeValue}</p>
+                        </div>
+                    </div>
+                </div> `
+            }                          
+        }
+    </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
