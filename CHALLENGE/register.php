@@ -15,8 +15,8 @@ require_once 'components/file_upload.php';
 
 $error = false;
 
-$firstname = $lastname = $email = $phone = $pass = $picture = "";
-$fnameError = $lnameError = $phoneError = $emailError = $passError = $picError = "";
+$firstname = $lastname = $email = $pass;
+$fnameError = $lnameError = $emailError = $passError;
 
 
 if (isset($_POST['btn-signup'])) {
@@ -32,16 +32,11 @@ if (isset($_POST['btn-signup'])) {
     $email = strip_tags($email);
     $email = htmlspecialchars($email);
 
-    $phone = trim($_POST['phone']);
-    $phone = strip_tags($phone);
-    $phone = htmlspecialchars($phone);
-
     $pass = trim($_POST['pass']);
     $pass = strip_tags($pass);
     $pass = htmlspecialchars($pass);
 
     $uploadError = "";
-    $picture = file_upload($_FILES['picture']);
 
 
     if (empty($firstname) || empty($lastname)) {
